@@ -51,6 +51,11 @@ class UI{
     const search = document.querySelector('.search');
     // Insert Alert Div in $searchContainer before $search div
     searchContainer.insertBefore(div,search);
+
+    // Set Time out To clearAlert() method
+    setTimeout(()=>{
+      this.clearAlert()
+    },3000)
   }
 
   // Clear Alert Message

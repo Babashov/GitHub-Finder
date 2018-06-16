@@ -20,16 +20,11 @@ searchUser.addEventListener('keyup',(e)=>{
           // Alert "Not Found Any User"
             ui.showAlert('User not found','alert alert-danger');
         }else{
-
-          // Clear Alert Message
-          ui.clearAlert();
           // Show Data
           ui.showProfile(data);
         }
       });
   }else{
-    // Clear Alert Message
-    ui.clearAlert()
     // Clear Profile
     ui.clearProfile();
 
